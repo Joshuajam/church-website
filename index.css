@@ -15,6 +15,7 @@
 .navbar-collapse{
     -webkit-justify-content: flex-end;
     justify-content: flex-end;
+    /* position:-webkit-sticky; */
 }
 
 .slider{
@@ -131,6 +132,7 @@
     margin: auto;
     font-size: 17px;
 }
+
 #bg h1{
     text-transform: uppercase;
     font-size: 70px;
@@ -140,7 +142,8 @@
 
 
 .net{
-    margin-top: 100px;
+    /* background-color: rgb(87, 102, 129); */
+    padding-top: 70px;
 }
 
 .button-container{
@@ -157,10 +160,125 @@
     font-size: 25px;
     transform: scale(0.9);
     transition: 0.5s;
-    
+}
+
+.button{
+    margin-top: 15px;
+    font-weight: 400;
+    line-height: 1;
+    text-transform: uppercase;
+    color: black;
+    background: transparent;
+    border: 1px solid black;
+    padding: 10px 20px;
+    border-radius: 9px;
+    border-width: 2px;
+    cursor: pointer;
+    font-size: 20px;
+    transform: scale(0.9);
+    transition: 0.5s;
+    /* background-color: grey; */
+}
+.button:hover{
+    background-color: rgb(184, 183, 183);
+    transform: scale(0.9) translateY(15px);
+    opacity: 0.5;
 }
 
 .button-container:hover{
     transform: scale(0.9) translateY(-15px);
     opacity: 0.5;
+}
+
+.button-missions{
+    font-weight: 400;
+    line-height: 1;
+    text-transform: uppercase;
+    color: rgb(0, 174, 255);
+    background: transparent;
+    border: 1px solid rgb(0, 174, 255);
+    padding: 20px 30px;
+    border-radius: 9px;
+    border-width: 3px;
+    cursor: pointer;
+    font-size: 25px;
+    transform: scale(0.9);
+    transition: 0.5s;
+    margin-top: 20px;
+    box-shadow: 0 1px 20px 1px rgb(167, 165, 165);
+}
+.button-missions:hover{
+    background-color: rgb(238, 236, 236);
+    transform: scale(0.9) translateY(15px);
+    opacity: 0.5;
+}
+
+.large img {
+        height: auto;
+        width: 100%;
+}
+.btn{
+    font-weight: 400;
+    line-height: 1;
+    text-transform: uppercase;
+    color: black;
+    background: transparent;
+    border: 1px solid black;
+    padding: 20px 30px;
+    border-radius: 9px;
+    border-width: 3px;
+    cursor: pointer;
+    font-size: 25px;
+    transform: scale(0.9);
+    transition: 0.5s;
+    margin-top: 20px;
+    box-shadow: 0 1px 20px 1px rgb(167, 165, 165);
+}
+.btn:hover{
+    color: white;
+    background-color: black;
+    /* transform: scale(0.9) translateY(15px);
+    opacity: 0.5; */
+}
+.my-btns {
+    display: flex;
+    justify-content: center;
+}
+
+#giving{
+    background:linear-gradient(0deg, rgba(30, 30, 31, 0.3), rgba(30, 30, 31, 0.3)), url('giving-image.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    padding-bottom: 100px;
+    margin-top: 70px;
+    /* float: right; */
+    justify-content: end;
+}
+.com{
+    text-decoration: none;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    margin-top: -20px;
+    font-size: 20px;
+    overflow: hidden;
+    color: rgb(150, 205, 236);
+}
+
+#elementor-background-overlay{
+    background: url('image-footer.jpeg');
+    /* background-position: center; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* opacity: 0.89; */
+    padding-bottom: 200px;
+}
+
+@media only screen and (max-width: 460px) {
+    #bg{
+      font-size: 16px;
+    }
+
 }
