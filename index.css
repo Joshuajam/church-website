@@ -1,12 +1,17 @@
-*{
+ *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     letter-spacing: 1px;
     animation: slider 1s;
     font-size: 15px;
     @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: rgb(87, 85, 85);
+} 
+
+html{
+    min-height: 100%;
 }
 
 .nav-ink{
@@ -14,8 +19,8 @@
 }
 .navbar-collapse{
     -webkit-justify-content: flex-end;
-    justify-content: flex-end;
-    /* position:-webkit-sticky; */
+    justify-content: flex-end; 
+    position:-webkit-sticky; 
 }
 
 .slider{
@@ -30,8 +35,8 @@
     color: #fff;
     width: 100%;
     height: 100vh;
-    background-color: rgba(95, 35, 207, 0.5);
-    /* background-image: url('DSC_1.JPG'); */
+    background-color: rgba(95, 35, 207, 0.5); 
+    background-image: url('DSC_1.JPG'); 
 }
 .principle{
     left: 50%;
@@ -46,8 +51,8 @@
     font-size: 90px;
     margin-bottom: 20px;
     font-weight: 700;
-    /* letter-spacing: 1px; */
-    text-transform: uppercase;
+     letter-spacing: 1px; 
+     text-transform: uppercase;
     color: white;
 }
 .principle p{
@@ -79,18 +84,16 @@
     right: 559px;
     top: 600px;
     transform: scale(0.9);
-    transition: 0.5s;
-}
+    transition: 0.5s; 
+ } 
 .anchor-text:hover{
     transform: scale(0.9) translateY(15px);
     opacity: 0.7;
 }
 
 
-/* .btn btn-default{
-    border: transparent;
-} */
-@keyframes slider{
+
+ @keyframes slider{
       0%{
         background-image: url('DSC_1.JPG');
     }
@@ -105,10 +108,10 @@
      45%{
         background-image: url('DSC_4.JPG');
     }
-}
+}  
 
-.bg {
-    /* background-image: url('event-images.jpeg'); */
+ .bg { 
+    background-image: url('event-images.jpeg'); 
     background:linear-gradient(0deg, rgba(77, 66, 107, 0.3), rgba(77, 66, 107, 0.3)), url('prayer.jpeg');
     opacity: 0.8;
     background-size: cover;
@@ -120,8 +123,7 @@
   
 }
 #bg{
-    /* background: rgb(85, 85, 129); */
-    text-align: center;
+     text-align: center;
     justify-content: center;
     margin-top: 10px;
     height: 100px;
@@ -138,11 +140,11 @@
     font-size: 70px;
     color: rgb(100, 98, 98);
     font-weight: 400;
-}
+    max-width: 100%; 
+ } 
 
 
-.net{
-    /* background-color: rgb(87, 102, 129); */
+.net{ 
     padding-top: 70px;
 }
 
@@ -162,7 +164,7 @@
     transition: 0.5s;
 }
 
-.button{
+.button{ 
     margin-top: 15px;
     font-weight: 400;
     line-height: 1;
@@ -176,8 +178,8 @@
     cursor: pointer;
     font-size: 20px;
     transform: scale(0.9);
-    transition: 0.5s;
-    /* background-color: grey; */
+    transition: 0.5s; 
+    background-color: grey;
 }
 .button:hover{
     background-color: rgb(184, 183, 183);
@@ -206,8 +208,8 @@
     transition: 0.5s;
     margin-top: 20px;
     box-shadow: 0 1px 20px 1px rgb(167, 165, 165);
-}
-.button-missions:hover{
+} 
+ .button-missions:hover{
     background-color: rgb(238, 236, 236);
     transform: scale(0.9) translateY(15px);
     opacity: 0.5;
@@ -224,7 +226,7 @@
     color: black;
     background: transparent;
     border: 1px solid black;
-    padding: 20px 30px;
+    padding: 20px 19px;
     border-radius: 9px;
     border-width: 3px;
     cursor: pointer;
@@ -236,24 +238,25 @@
 }
 .btn:hover{
     color: white;
-    background-color: black;
-    /* transform: scale(0.9) translateY(15px);
-    opacity: 0.5; */
-}
+    background-color: black; 
+     transform: scale(0.9) translateY(15px);
+    opacity: 0.5; 
+} 
 .my-btns {
     display: flex;
-    justify-content: center;
-}
+    justify-content: center; 
+    max-width: 100%;
+} 
 
-#giving{
+
+ #giving{ 
     background:linear-gradient(0deg, rgba(30, 30, 31, 0.3), rgba(30, 30, 31, 0.3)), url('giving-image.jpeg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     overflow: hidden;
     padding-bottom: 100px;
-    margin-top: 70px;
-    /* float: right; */
+    margin-top: 70px; 
     justify-content: end;
 }
 .com{
@@ -265,20 +268,73 @@
     font-size: 20px;
     overflow: hidden;
     color: rgb(150, 205, 236);
-}
+} 
 
-#elementor-background-overlay{
-    background: url('image-footer.jpeg');
-    /* background-position: center; */
+ section{
+    background:linear-gradient(0deg, rgba(58, 58, 214, 0.3), rgba(58, 58, 214, 0.3)), url('image-footer.jpeg');
     background-repeat: no-repeat;
     background-size: cover;
-    /* opacity: 0.89; */
-    padding-bottom: 200px;
+    opacity: 0.89;
+    padding-bottom: 50px;
+    padding-top: 100px;
+    margin-top: 100px; 
+}
+.font{
+    font-size: 20px;
+    cursor: pointer;
+    margin-left: 30px;
+    transform: scale(0.9);
+    transition: 0.8s;
+}
+.font:hover{
+    transform: scale(0.9) translateY(-15px);
+
+}
+.font-awesome{
+    font-size: 20px;
+    padding-top: 30px;
 }
 
-@media only screen and (max-width: 460px) {
-    #bg{
-      font-size: 16px;
+
+
+
+@media screen and (max-width: 800px) {
+    #bg h1{
+      font-size: 8vw;
     }
-
-}
+    #bg{
+        margin-bottom: 40px;
+    }
+    .btns{
+        padding: 10px;
+    }
+    .font{
+        font-size: 10px;
+        font-weight: 500;
+    }
+    .footer{
+        max-width: 800px;
+        text-align: center;
+    }
+    .round-img{
+        margin-bottom: 40px;
+    }
+    .round-img2{
+        margin-bottom: 40px;
+    }
+    .text{
+        margin-bottom: 40px;
+    }
+    .event{
+        margin-top: 25px;
+    }
+    .large{
+        padding: 15px;
+    } 
+    .large1{
+        padding: 15px;
+    }
+    .missions-img{
+        margin-top: 30px;
+    }
+  }
